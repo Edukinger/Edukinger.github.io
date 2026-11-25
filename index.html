@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8e6ef">
+  <meta name="description" content="Un pequeño detalle para comenzar bonito el día.">
+  <title>Un pequeño mundo para Chaparrita 🧸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span>
+    <span class="spark s4">✧</span><span class="spark s5">✦</span><span class="cloud cloud1"></span><span class="cloud cloud2"></span>
+  </div>
+  <main class="story">
+    <header class="hero panel">
+      <div class="date-pill">25 DE NOVIEMBRE · DÍA DEL PELUCHE</div>
+      <div class="sunrise" aria-hidden="true">☀️</div>
+      <p class="eyebrow">Un nuevo día, una nueva oportunidad</p>
+      <h1>¡Muy buenos días,<br><em>Chaparrita!</em></h1>
+      <p class="intro">Que hoy te sobren razones para sonreír,<br>que algo bonito te sorprenda y que tu día<br>comience tan lindo como tú lo mereces.</p>
+      <a class="scroll-cue" href="#gift">Hay algo para ti <span>↓</span></a>
+    </header>
+
+    <section class="gift-section" id="gift">
+      <p class="eyebrow">Con cariño, para alegrarte la mañana</p>
+      <h2>Un regalo pequeñito...</h2>
+      <p class="section-copy">A veces, los detalles más sencillos son los que nos sacan las sonrisas más bonitas.</p>
+      <button class="gift-button" id="open-gift" aria-label="Abrir el regalo">
+        <span class="gift-glow"></span><span class="gift-box" aria-hidden="true"><span class="gift-lid"></span><span class="gift-ribbon"></span><span class="gift-bow">♡</span></span>
+        <span class="gift-hint">Toca el regalo para abrirlo</span>
+      </button>
+      <div class="reveal-bear" id="reveal-bear" aria-live="polite">
+        <div class="bear-big">🧸</div>
+        <h3>¡Sorpresa!</h3>
+        <p>Un peluchito para recordarte que mereces cosas bonitas.</p>
+      </div>
+    </section>
+
+    <section class="letter panel">
+      <div class="letter-flower">✿</div>
+      <p class="eyebrow">Unas palabritas para ti</p>
+      <h2>Una pequeña carta</h2>
+      <p class="section-copy">Porque un regalo también puede venir acompañado de buenos deseos.</p>
+      <button class="button secondary" id="open-letter">Leer mi mensajito 💌</button>
+      <article class="letter-content" id="letter-content">
+        <p>¡Feliz día del peluche, Chaparrita! 🧸</p>
+        <p>Quería dejarte este pequeño detalle para desearte una mañana bonita y recordarte que siempre es lindo recibir algo que nos haga sonreír.</p>
+        <p>Ojalá este peluchito te acompañe, te dé un poquito de ternura y se convierta en uno de esos detalles que se recuerdan con cariño.</p>
+        <p>Que nunca te falten motivos para reír, personas que te aprecien y días que te hagan sentir feliz. Disfruta mucho el día de hoy.</p>
+        <p class="signature">Con mucho aprecio,<br>Salamandra ♡</p>
+      </article>
+    </section>
+
+    <section class="wish-section">
+      <div class="wish-card">
+        <div class="wish-icon">🌷</div>
+        <h2>Un deseo para hoy</h2>
+        <p>Que tu día tenga momentos tranquilos, sorpresas bonitas y muchas razones para sonreír.</p>
+        <button class="button primary" id="wish-button">Descubrir otro deseo ✨</button>
+        <p class="wish-result" id="wish-result" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-stars">✧　♡　✧</div>
+      <p>Hecho con cariño para Chaparrita</p>
+      <small>Que tengas un día muy bonito ☁️</small>
+    </footer>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
